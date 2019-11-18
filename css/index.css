@@ -126,20 +126,45 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
+}
 * {
   box-sizing: border-box;
 }
 html {
   font-size: 62.5%;
 }
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+h1 {
+  font-size: 4.4rem;
+}
+h2 {
+  font-size: 4.2rem;
+}
+h3 {
+  font-size: 3.6rem;
+}
 .container {
   max-width: 950px;
   width: 100%;
   margin: 0 auto;
-  background: gray;
+  background: blue;
 }
 header {
-  background: red;
   display: flex;
 }
 .hero {
@@ -147,7 +172,7 @@ header {
   height: 50vh;
   width: 50vw;
   background-size: cover;
-  background-position: center;
+  background-position: left bottom;
   background-repeat: no-repeat;
   position: relative;
 }
