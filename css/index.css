@@ -210,3 +210,18 @@ header {
 .triptych .step {
   width: 30%;
 }
+.bottom-section {
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-section img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.down {
+  align-self: center;
+}
