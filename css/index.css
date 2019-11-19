@@ -189,7 +189,7 @@ header {
   display: flex;
 }
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/burger.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/burger.jpg");
   height: 50vh;
   width: 50vw;
   background-size: cover;
@@ -203,12 +203,14 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: white;
 }
 .hero-content h2 {
   font-size: 5.6rem;
   line-height: 1.25;
   margin-bottom: 2.8rem;
   text-transform: uppercase;
+  text-shadow: 0.2rem 0.2rem 0.4rem #1C1118;
 }
 .btn {
   background: #FFAD43;
