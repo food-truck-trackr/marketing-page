@@ -1,0 +1,91 @@
+nav {
+    .flex(space-between, center);
+
+    .links {
+        width: 35.0rem;
+        
+        .flex(space-between, center);
+    
+        // @media @phone {
+        //     width: 72%;
+        // }
+    }
+
+    .links a {
+        font-size: 2.0rem;
+        font-weight: bold;
+        color: @nav-font;
+        text-decoration: none;
+    }
+
+    h1 {
+        .logo-font();
+        text-transform: uppercase;
+        padding: 1.2rem;
+    }
+
+    .buttons-container {
+        display: flex;
+    }
+
+    .btn {
+        .button();
+        margin-right: 1.0rem;
+    }
+}
+
+.hero {
+    // "linear-gradient" darkens image so text is easier to read
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/burger.jpg");
+    height: 50vh;
+    width: 50vw;
+    background-size: cover;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+// hero on team page overrides hero on home page
+.hero.team {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/chips.jpg");
+    background-position: center;
+}
+
+.hero-content {
+	text-align: left;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    color: white;
+
+	h2 {
+        font-size: 5.6rem;
+        line-height: 1.25;
+        margin-bottom: 2.8rem;
+        text-transform: uppercase;
+        text-shadow: 0.2rem 0.2rem 0.4rem @licorice;
+	}
+
+
+
+	// .button {
+	// 	color: inherit;
+	// 	text-decoration: none;
+	// 	background-color: @accent1;
+	// 	border-radius: 1.0rem;
+	// 	cursor: pointer;
+	// 	padding: 1.0rem;
+	// 	font-size: 1.25em;
+
+	// 	&:hover {
+	// 		background-color: transparent;
+	// 		border: 0.2rem solid @complement;
+	// 	}
+
+	// 	@media (max-width: @mobile) {
+	// 		padding: 0.75rem;
+	// 		font-size: 1.25em;
+	// 	}
+	// }
+}
