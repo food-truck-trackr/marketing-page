@@ -146,11 +146,6 @@ table {
 html {
   font-size: 62.5%;
 }
-@font-face {
-  font-family: 'Forque';
-  src: url('Forque.eot');
-  src: url('Forque.eot?iefix') format('eot'), url('Forque.woff') format('woff'), url('Forque.ttf') format('truetype'), url('Forque.svg#Forque') format('svg');
-}
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -159,7 +154,7 @@ h1 {
 }
 h2 {
   font-size: 4.2rem;
-  font-family: 'Forque';
+  font-family: 'Forque', sans-serif;
 }
 h3 {
   font-size: 3.6rem;
@@ -185,6 +180,18 @@ header {
   background-position: left bottom;
   background-repeat: no-repeat;
   position: relative;
+}
+.btn {
+  background: #FFAD43;
+  font-size: 1.8rem;
+  width: 10rem;
+  height: 3.6rem;
+  border-radius: 0.7rem;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .logo-container {
   width: 50vw;
