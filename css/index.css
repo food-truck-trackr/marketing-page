@@ -20,7 +20,7 @@
   src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
 }
 .logo-font {
-  font-family: 'Forque', Arial, Helvetica, sans-serif;
+  font-family: 'Forque', 'Anton', Arial, Helvetica, sans-serif;
   letter-spacing: 0.2rem;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -189,54 +189,6 @@ p {
 header {
   display: flex;
 }
-.hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/burger.jpg");
-  height: 50vh;
-  width: 50vw;
-  background-size: cover;
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  position: relative;
-}
-.hero-content {
-  text-align: left;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-.hero-content h2 {
-  font-size: 5.6rem;
-  line-height: 1.25;
-  margin-bottom: 2.8rem;
-  text-transform: uppercase;
-  text-shadow: 0.2rem 0.2rem 0.4rem #1C1118;
-}
-.btn {
-  background: #FFAD43;
-  font-size: 2rem;
-  font-weight: bold;
-  width: 18rem;
-  height: 4rem;
-  border-radius: 0.7rem;
-  color: white;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.logo-container {
-  width: 50vw;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.logo-container img {
-  max-width: 100%;
-  max-height: 100%;
-}
 .triptych {
   display: flex;
 }
@@ -276,7 +228,7 @@ nav .links a {
   text-decoration: none;
 }
 nav h1 {
-  font-family: 'Forque', Arial, Helvetica, sans-serif;
+  font-family: 'Forque', 'Anton', Arial, Helvetica, sans-serif;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   padding: 1.2rem;
@@ -297,4 +249,55 @@ nav .btn {
   justify-content: center;
   align-items: center;
   margin-right: 1rem;
+}
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/burger.jpg");
+  height: 50vh;
+  width: 50vw;
+  background-size: cover;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.hero.team {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/burger.jpg");
+}
+.hero-content {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.hero-content h2 {
+  font-size: 5.6rem;
+  line-height: 1.25;
+  margin-bottom: 2.8rem;
+  text-transform: uppercase;
+  text-shadow: 0.2rem 0.2rem 0.4rem #1C1118;
+}
+.btn {
+  background: #FFAD43;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 18rem;
+  height: 4rem;
+  border-radius: 0.7rem;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-container {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-container img {
+  max-width: 100%;
+  max-height: 100%;
 }
