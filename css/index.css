@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -126,20 +140,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
-}
 * {
   box-sizing: border-box;
 }
@@ -157,6 +157,10 @@ h2 {
 }
 h3 {
   font-size: 3.6rem;
+}
+p {
+  font-size: 1.8rem;
+  line-height: 1.5;
 }
 .container {
   max-width: 950px;
@@ -177,12 +181,19 @@ header {
   position: relative;
 }
 .logo-container {
-  background: pink;
   width: 50vw;
   height: 50vh;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .logo-container img {
   max-width: 100%;
   max-height: 100%;
+}
+.triptych {
+  display: flex;
+}
+.triptych .step {
+  width: 30%;
 }
