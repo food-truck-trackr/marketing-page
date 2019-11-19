@@ -188,9 +188,6 @@ header {
 .triptych {
   display: flex;
 }
-.triptych .step {
-  width: 30%;
-}
 .bottom-section {
   max-width: 950px;
   width: 100%;
@@ -202,9 +199,21 @@ header {
 .bottom-section img {
   max-width: 100%;
   max-height: 100%;
+  margin: 2%;
 }
 .down {
   align-self: center;
+}
+#triptych .step {
+  display: flex;
+  justify-content: space-around;
+}
+#triptych .step div {
+  text-align: center;
+  width: 15%;
+}
+#triptych .step div p {
+  text-align: justify;
 }
 nav {
   display: flex;
