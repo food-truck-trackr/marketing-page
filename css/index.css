@@ -256,3 +256,43 @@ header {
 .down {
   align-self: center;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .links {
+  padding-top: 0.6rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .links a {
+  font-size: 1.6rem;
+  color: #cc3333;
+  text-decoration: none;
+}
+nav h1 {
+  font-family: 'Forque', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding: 1.2rem;
+  background: gray;
+}
+nav .buttons-container {
+  display: flex;
+}
+nav .btn {
+  background: #FFAD43;
+  font-size: 1.8rem;
+  width: 10rem;
+  height: 3.6rem;
+  border-radius: 0.7rem;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}

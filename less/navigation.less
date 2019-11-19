@@ -1,13 +1,9 @@
 nav {
     .flex(space-between, center);
 
-    h1 {
-        padding: 1.3rem;
-    }
-
     .links {
-        width: 37.5rem;
-        margin: 0 auto;
+        // width: 37.5rem;
+        // margin: 0 auto;
         padding-top: 0.6rem;
         padding-bottom: 1.0rem;
         
@@ -23,4 +19,30 @@ nav {
         color: @nav-font;
         text-decoration: none;
     }
+
+    h1 {
+        .logo-font();
+        text-transform: uppercase;
+        padding: 1.2rem;
+        background: gray;
+    }
+
+    .buttons-container {
+        display: flex;
+    }
+
+    .btn {
+        .button();
+        margin-right: 1.0rem;
+    }
+
+    // .button (@font-size: 1.8rem, @width: 10.0rem, @height: 3.6rem) {
+    //     background: #FFAD43;
+    //     font-size: @font-size;
+    //     width: @width; 
+    //     height: @height;
+    //     border-radius: 0.7rem;
+    //     color: white;
+    //     cursor: pointer;
+    // }
 }
