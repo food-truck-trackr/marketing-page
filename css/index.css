@@ -19,10 +19,6 @@
   font-display: swap;
   src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
 }
-.logo-font {
-  font-family: 'Forque', 'Anton', Arial, Helvetica, sans-serif;
-  letter-spacing: 0.2rem;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -260,7 +256,8 @@ nav .btn {
   position: relative;
 }
 .hero.team {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/burger.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/chips.jpg");
+  background-position: center;
 }
 .hero-content {
   text-align: left;
@@ -300,4 +297,7 @@ nav .btn {
 .logo-container img {
   max-width: 100%;
   max-height: 100%;
+}
+.meet-the-team h3 {
+  color: #89471A;
 }
