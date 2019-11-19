@@ -1,4 +1,11 @@
 @font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Anton Regular'), local('Anton-Regular'), url(https://fonts.gstatic.com/s/anton/v11/1Ptgg87LROyAm3Kz-Co.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -11,6 +18,10 @@
   font-weight: 700;
   font-display: swap;
   src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
+}
+.logo-font {
+  font-family: 'Forque', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.2rem;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -149,12 +160,17 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
 }
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Anton', sans-serif;
+}
 h1 {
   font-size: 4.4rem;
 }
 h2 {
   font-size: 4.2rem;
-  font-family: 'Forque', sans-serif;
 }
 h3 {
   font-size: 3.6rem;
