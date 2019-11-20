@@ -185,9 +185,6 @@ p {
 .container h3 {
   color: #FFAD43;
 }
-header {
-  display: flex;
-}
 .triptych {
   display: flex;
 }
@@ -288,13 +285,19 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 nav h1 {
   font-family: 'Forque', 'Anton', Arial, Helvetica, sans-serif;
   letter-spacing: 0.2rem;
   padding: 1rem;
   text-transform: uppercase;
+}
+@media (max-width: 500px) {
+  nav h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
 }
 nav a.logo-link {
   color: #1C1118;
@@ -305,11 +308,7 @@ nav .links {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-@media (max-width: 500px) {
-  nav .links {
-    padding-bottom: 1.2rem;
-  }
+  margin-bottom: 1rem;
 }
 nav .buttons-container {
   display: flex;
@@ -328,11 +327,12 @@ nav .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 1rem;
+  margin: 0 1rem 1rem;
 }
 @media (max-width: 500px) {
   nav {
     flex-direction: column;
+    align-items: center;
   }
 }
 .links a {
@@ -341,7 +341,15 @@ nav .btn {
   color: #cc3333;
   text-decoration: none;
 }
-.hero {
+header {
+  display: flex;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+}
+header .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/burger.jpg");
   height: 50vh;
   width: 50vw;
@@ -350,11 +358,17 @@ nav .btn {
   background-repeat: no-repeat;
   position: relative;
 }
-.hero.team {
+@media (max-width: 500px) {
+  header .hero {
+    height: 30vh;
+    width: 100vw;
+  }
+}
+header .hero.team {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/chips.jpg");
   background-position: center;
 }
-.hero-content {
+header .hero-content {
   text-align: left;
   position: absolute;
   top: 50%;
@@ -362,12 +376,60 @@ nav .btn {
   transform: translate(-50%, -50%);
   color: white;
 }
-.hero-content h2 {
+@media (max-width: 500px) {
+  header .hero-content {
+    width: 75%;
+  }
+}
+header .hero-content h2 {
   font-size: 5.4rem;
   line-height: 1.25;
   margin-bottom: 2.8rem;
   text-transform: uppercase;
   text-shadow: 0.2rem 0.2rem 0.4rem #1C1118;
+}
+@media (max-width: 500px) {
+  header .hero-content h2 {
+    font-size: 3rem;
+  }
+}
+header .hero-content .btn {
+  background: #FFAD43;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 18rem;
+  height: 4rem;
+  border-radius: 0.7rem;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  header .hero-content .btn {
+    font-size: 1.8rem;
+    width: 14rem;
+    height: 3.8rem;
+  }
+}
+header .logo-container {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: pink;
+}
+@media (max-width: 500px) {
+  header .logo-container {
+    width: 100vw;
+    height: 30vh;
+  }
+}
+header .logo-container img {
+  max-width: 100%;
+  max-height: 100%;
 }
 footer {
   color: #D6D6D5;
@@ -403,30 +465,6 @@ footer .links a {
 footer p {
   font-size: 1.6rem;
   text-align: right;
-}
-.btn {
-  background: #FFAD43;
-  font-size: 2rem;
-  font-weight: bold;
-  width: 18rem;
-  height: 4rem;
-  border-radius: 0.7rem;
-  color: white;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.logo-container {
-  width: 50vw;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.logo-container img {
-  max-width: 100%;
-  max-height: 100%;
 }
 .meet-the-team h3 {
   color: #cc3333;
