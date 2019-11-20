@@ -154,14 +154,14 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #1C1118;
 }
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
 }
 h1 {
   font-size: 4.4rem;
@@ -178,7 +178,7 @@ p {
 }
 .container {
   max-width: 950px;
-  width: 100%;
+  width: 30%;
   margin: 0 auto;
   background: blue;
 }
@@ -204,6 +204,9 @@ header {
 .down {
   align-self: center;
 }
+.bottom-section .down p {
+  font-size: 2rem;
+}
 #triptych .step {
   display: flex;
   justify-content: space-around;
@@ -214,6 +217,7 @@ header {
 }
 #triptych .step div p {
   text-align: justify;
+  font-size: 2rem;
 }
 nav {
   display: flex;
