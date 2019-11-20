@@ -1,0 +1,40 @@
+footer {
+    color: @light-gray;
+    background: @footer-background;
+    padding: 2.0rem 0;
+    
+    .container {
+        .flex(space-between, start);
+    }
+
+    .column {
+        width: 30%;
+
+        .icon {
+            font-size: 3.4rem;
+            color: @light-gray;
+        }
+    }
+
+    h1 {
+        .logo-font();
+        font-size: 4.0rem;
+        text-transform: uppercase;
+        // padding: 1.2rem;
+    }
+
+
+    .links a {
+        color: @light-gray;
+        display: block;
+        font-size: 1.8rem;
+        font-weight: normal;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.6rem;
+        text-align: right;
+    }
+}

@@ -1,37 +1,46 @@
 nav {
     .flex(space-between, center);
 
-    .links {
-        width: 35.0rem;
-        
-        .flex(space-between, center);
-    
-        // @media @phone {
-        //     width: 72%;
-        // }
+    h1 {
+        .logo-font();
+        padding: 1.0rem;
+        text-transform: uppercase;
     }
 
-    .links a {
-        font-size: 2.0rem;
-        font-weight: bold;
-        color: @nav-font;
+    a.logo-link {
+        color: @licorice;
         text-decoration: none;
     }
 
-    h1 {
-        .logo-font();
-        text-transform: uppercase;
-        padding: 1.2rem;
+    .links {
+        width: 32.5rem;
+        
+        .flex(space-around, center);
+
+        @media @mobile {
+            padding-bottom: 1.2rem;
+        }
     }
 
     .buttons-container {
-        display: flex;
+        .flex(end, center);
     }
 
     .btn {
         .button();
-        margin-right: 1.0rem;
+        margin: 0 1.0rem;
     }
+
+    @media @mobile {
+        flex-direction: column;
+    }
+}
+
+.links a {
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: @nav-font;
+    text-decoration: none;
 }
 
 .hero {
@@ -60,7 +69,7 @@ nav {
     color: white;
 
 	h2 {
-        font-size: 5.6rem;
+        font-size: 5.4rem;
         line-height: 1.25;
         margin-bottom: 2.8rem;
         text-transform: uppercase;
