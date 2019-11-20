@@ -337,6 +337,11 @@ header .hero-content h2 {
   text-transform: uppercase;
   text-shadow: 0.2rem 0.2rem 0.4rem #1C1118;
 }
+@media (max-width: 500px) {
+  header .hero-content h2 {
+    font-size: 3rem;
+  }
+}
 header .logo-container {
   width: 50vw;
   height: 50vh;
