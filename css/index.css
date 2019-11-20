@@ -181,9 +181,6 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-header {
-  display: flex;
-}
 .triptych {
   display: flex;
 }
@@ -225,11 +222,7 @@ nav .links {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-@media (max-width: 500px) {
-  nav .links {
-    padding-bottom: 1.2rem;
-  }
+  margin-bottom: 1rem;
 }
 nav .buttons-container {
   display: flex;
@@ -248,7 +241,7 @@ nav .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 1rem;
+  margin: 0 1rem 1rem;
 }
 @media (max-width: 500px) {
   nav {
@@ -260,6 +253,14 @@ nav .btn {
   font-weight: bold;
   color: #cc3333;
   text-decoration: none;
+}
+header {
+  display: flex;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
 }
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/burger.jpg");
