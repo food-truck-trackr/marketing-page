@@ -419,17 +419,16 @@ header .logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: pink;
+}
+header .logo-container .desktop-logo {
+  max-width: 100%;
+  max-height: 50vh;
 }
 @media (max-width: 500px) {
   header .logo-container {
     width: 100vw;
     height: 30vh;
   }
-}
-header .logo-container img {
-  max-width: 100%;
-  max-height: 100%;
 }
 footer {
   color: #D6D6D5;
