@@ -210,14 +210,31 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+nav h1 {
+  font-family: 'Forque', 'Anton', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.2rem;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+nav a.logo-link {
+  color: #1C1118;
+  text-decoration: none;
+}
 nav .links {
   width: 32.5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+}
+@media (max-width: 500px) {
+  nav .links {
+    padding-bottom: 1.2rem;
+  }
 }
 nav .buttons-container {
   display: flex;
+  justify-content: end;
+  align-items: center;
 }
 nav .btn {
   background: #FFAD43;
@@ -231,13 +248,12 @@ nav .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 1rem;
+  margin: 0 1rem;
 }
-nav h1 {
-  font-family: 'Forque', 'Anton', Arial, Helvetica, sans-serif;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  padding: 1.2rem;
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
 }
 .links a {
   font-size: 2rem;
