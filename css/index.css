@@ -216,18 +216,6 @@ nav .links {
   justify-content: space-between;
   align-items: center;
 }
-nav .links a {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #cc3333;
-  text-decoration: none;
-}
-nav h1 {
-  font-family: 'Forque', 'Anton', Arial, Helvetica, sans-serif;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  padding: 1.2rem;
-}
 nav .buttons-container {
   display: flex;
 }
@@ -244,6 +232,18 @@ nav .btn {
   justify-content: center;
   align-items: center;
   margin-right: 1rem;
+}
+nav h1 {
+  font-family: 'Forque', 'Anton', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding: 1.2rem;
+}
+.links a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #cc3333;
+  text-decoration: none;
 }
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/burger.jpg");
@@ -277,12 +277,36 @@ footer {
   color: #D6D6D5;
   background: #cc3333;
   padding: 2rem 0;
+}
+footer .container {
   display: flex;
   justify-content: space-between;
   align-items: start;
 }
 footer .column {
   width: 30%;
+}
+footer .column .icon {
+  font-size: 3.4rem;
+  color: #D6D6D5;
+}
+footer h1 {
+  font-family: 'Forque', 'Anton', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+footer .links a {
+  color: #D6D6D5;
+  display: block;
+  font-size: 1.8rem;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: center;
+}
+footer p {
+  font-size: 1.6rem;
+  text-align: right;
 }
 .btn {
   background: #FFAD43;
