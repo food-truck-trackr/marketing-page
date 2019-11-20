@@ -178,7 +178,7 @@ p {
 }
 .container {
   max-width: 950px;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   padding: 30px;
 }
@@ -193,7 +193,7 @@ header {
 }
 .bottom-section {
   max-width: 950px;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   height: 50vh;
   padding: 40px;
@@ -205,41 +205,85 @@ header {
   max-height: 100%;
   margin: 2%;
 }
-.down {
+@media (max-width: 500px) {
+  .bottom-section img {
+    margin: 30px;
+    height: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .bottom-section {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+}
+.bottom-section .down {
   align-self: center;
 }
-.bottom-section .down p {
-  font-size: 2rem;
-  width: 80%;
+@media (max-width: 500px) {
+  .bottom-section .down {
+    height: 80px;
+    margin: 30px;
+    width: 80%;
+  }
 }
-#triptych .step {
+.bottom-section h3 {
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 3px;
+  padding: 4% 0;
+  color: #89471A;
+}
+@media (max-width: 500px) {
+  .bottom-section h3 {
+    font-size: 2rem;
+  }
+}
+.bottom-section h3 p {
+  text-align: justify;
+  font-size: 2rem;
+  font-size: 1.5rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+#triptych {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   padding: 50px;
 }
-#triptych .step div {
-  text-align: center;
-  width: 20%;
+@media (max-width: 500px) {
+  #triptych {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 }
-#triptych .step div p {
+#triptych div {
+  text-align: center;
+  width: 25%;
+}
+@media (max-width: 500px) {
+  #triptych div {
+    width: 100%;
+    align-items: center;
+  }
+}
+#triptych div h3 {
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 3px;
+  padding: 4% 0;
+  color: #89471A;
+}
+@media (max-width: 500px) {
+  #triptych div h3 {
+    font-size: 2rem;
+  }
+}
+#triptych div p {
   text-align: justify;
   font-size: 2rem;
-}
-#triptych .step div h3 {
-  font-family: 'Fjalla One', sans-serif;
-  letter-spacing: 3px;
-  padding: 4% 0;
-  color: #89471A;
-}
-.down h3 {
-  font-family: 'Fjalla One', sans-serif;
-  letter-spacing: 3px;
-  padding: 4% 0;
-  color: #89471A;
-}
-p {
   font-size: 1.5rem;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 nav {
   display: flex;
