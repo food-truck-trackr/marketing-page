@@ -180,7 +180,6 @@ p {
   max-width: 950px;
   width: 100%;
   margin: 0 auto;
-  background: blue;
 }
 header {
   display: flex;
@@ -212,7 +211,7 @@ nav {
   align-items: center;
 }
 nav .links {
-  width: 35rem;
+  width: 32.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -268,7 +267,7 @@ nav .btn {
   color: white;
 }
 .hero-content h2 {
-  font-size: 5.6rem;
+  font-size: 5.4rem;
   line-height: 1.25;
   margin-bottom: 2.8rem;
   text-transform: uppercase;
@@ -299,6 +298,47 @@ nav .btn {
   max-height: 100%;
 }
 .meet-the-team h3 {
-  color: #89471A;
+  color: #cc3333;
   text-align: center;
+  padding-top: 3rem;
+  line-height: 1.2;
+}
+.meet-the-team .row {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1rem;
+  border-bottom: 1px solid #89471A;
+  padding: 2.5rem 3rem;
+}
+.meet-the-team .row strong {
+  font-weight: bold;
+}
+.meet-the-team .avatar {
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.meet-the-team .profile {
+  margin-left: 1rem;
+}
+.upcoming-stuff {
+  padding: 5rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.upcoming-stuff h3 {
+  padding-bottom: 1.5rem;
+}
+.upcoming-stuff p {
+  padding-bottom: 1rem;
+}
+.upcoming-stuff .img-container {
+  width: 50%;
+}
+.upcoming-stuff .img-container img {
+  max-width: 100%;
+  height: auto;
 }

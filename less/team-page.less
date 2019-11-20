@@ -1,7 +1,55 @@
 .meet-the-team {
     h3 {
-        color: @saddle-brown;
+        color: @wine;
         text-align: center;
+        padding-top: 3.0rem;
+        line-height: 1.2;
     }
-    
+ 
+    .row {
+        .flex(start, center);
+
+        margin-top: 1.0rem;
+        border-bottom: 1px solid @saddle-brown;
+        padding: 2.5rem 3.0rem;
+
+        strong {
+            font-weight: bold;
+        }
+    }
+
+    // NEED TO MAKE AVATAR IMGS RESPONSIVE
+    .avatar {
+        width: 100px;
+        height: 100px;
+        vertical-align: middle;
+        border-radius: 50%;  
+    }
+
+    .profile {
+        margin-left: 1.0rem;
+    }
+}
+
+.upcoming-stuff {
+    padding: 5.0rem 5.0rem;
+
+    h3 {
+        padding-bottom: 1.5rem;
+    }
+
+    p {
+        padding-bottom: 1.0rem;
+    }
+
+    .flex(space-between, center);
+
+    .img-container {
+        width: 50%;
+    }
+
+    .img-container img {
+        max-width: 100%;
+        height: auto;
+    }
 }
