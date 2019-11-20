@@ -273,6 +273,17 @@ nav .btn {
   text-transform: uppercase;
   text-shadow: 0.2rem 0.2rem 0.4rem #1C1118;
 }
+footer {
+  color: #D6D6D5;
+  background: #cc3333;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+footer .column {
+  width: 30%;
+}
 .btn {
   background: #FFAD43;
   font-size: 2rem;
