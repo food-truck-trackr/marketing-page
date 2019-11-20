@@ -59,6 +59,7 @@ header {
         position: relative;
 
         @media @mobile {
+            height: 30vh;
             width: 100vw;
         }
     }
@@ -77,6 +78,10 @@ header {
         transform: translate(-50%, -50%);
         color: white;
 
+        @media @mobile {
+            width: 75%;
+        }
+
         h2 {
             font-size: 5.4rem;
             line-height: 1.25;
@@ -87,10 +92,14 @@ header {
     }
 
     .logo-container {
-        width: 100vw;
+        width: 50vw;
         height: 50vh;
     
         .flex(center, center);
+    
+        @media @mobile {
+            width: 100vw;
+        }
     }
     
     .logo-container img {

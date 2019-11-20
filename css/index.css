@@ -309,6 +309,7 @@ header .hero {
 }
 @media (max-width: 500px) {
   header .hero {
+    height: 30vh;
     width: 100vw;
   }
 }
@@ -324,6 +325,11 @@ header .hero-content {
   transform: translate(-50%, -50%);
   color: white;
 }
+@media (max-width: 500px) {
+  header .hero-content {
+    width: 75%;
+  }
+}
 header .hero-content h2 {
   font-size: 5.4rem;
   line-height: 1.25;
@@ -332,11 +338,16 @@ header .hero-content h2 {
   text-shadow: 0.2rem 0.2rem 0.4rem #1C1118;
 }
 header .logo-container {
-  width: 100vw;
+  width: 50vw;
   height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  header .logo-container {
+    width: 100vw;
+  }
 }
 header .logo-container img {
   max-width: 100%;
