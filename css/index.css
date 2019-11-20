@@ -375,10 +375,12 @@ header .logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: pink;
 }
 @media (max-width: 500px) {
   header .logo-container {
     width: 100vw;
+    height: 30vh;
   }
 }
 header .logo-container img {
