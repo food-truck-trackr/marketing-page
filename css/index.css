@@ -241,13 +241,19 @@ p {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 nav h1 {
   font-family: 'Forque', 'Anton', Arial, Helvetica, sans-serif;
   letter-spacing: 0.2rem;
   padding: 1rem;
   text-transform: uppercase;
+}
+@media (max-width: 500px) {
+  nav h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
 }
 nav a.logo-link {
   color: #1C1118;
@@ -282,6 +288,7 @@ nav .btn {
 @media (max-width: 500px) {
   nav {
     flex-direction: column;
+    align-items: center;
   }
 }
 .links a {
@@ -342,6 +349,26 @@ header .hero-content h2 {
     font-size: 3rem;
   }
 }
+header .hero-content .btn {
+  background: #FFAD43;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 18rem;
+  height: 4rem;
+  border-radius: 0.7rem;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  header .hero-content .btn {
+    font-size: 1.8rem;
+    width: 14rem;
+    height: 3.8rem;
+  }
+}
 header .logo-container {
   width: 50vw;
   height: 50vh;
@@ -392,19 +419,6 @@ footer .links a {
 footer p {
   font-size: 1.6rem;
   text-align: right;
-}
-.btn {
-  background: #FFAD43;
-  font-size: 2rem;
-  font-weight: bold;
-  width: 18rem;
-  height: 4rem;
-  border-radius: 0.7rem;
-  color: white;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .meet-the-team h3 {
   color: #cc3333;
