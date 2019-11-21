@@ -206,27 +206,17 @@ header {
   margin: 2%;
 }
 @media (max-width: 500px) {
-  .bottom-section img {
-    margin: 30px;
-    height: 40%;
-  }
 }
 @media (max-width: 500px) {
   .bottom-section {
     flex-direction: column;
     align-items: center;
-    width: 80%;
   }
 }
 .bottom-section .down {
   align-self: center;
 }
 @media (max-width: 500px) {
-  .bottom-section .down {
-    height: 80px;
-    margin: 30px;
-    width: 80%;
-  }
 }
 .bottom-section h3 {
   font-family: "Fjalla One", sans-serif;
@@ -242,7 +232,6 @@ header {
 .bottom-section h3 p {
   text-align: justify;
   font-size: 2rem;
-  font-size: 1.5rem;
   font-family: "Nunito Sans", sans-serif;
 }
 #triptych {
@@ -282,7 +271,6 @@ header {
 #triptych div p {
   text-align: justify;
   font-size: 2rem;
-  font-size: 1.5rem;
   font-family: "Nunito Sans", sans-serif;
 }
 nav {
