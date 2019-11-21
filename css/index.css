@@ -559,11 +559,6 @@ footer a.credits {
     text-align: center;
   }
 }
-@media (max-width: 500px) {
-  .upcoming-stuff h3 {
-    text-align: center;
-  }
-}
 .upcoming-stuff p {
   padding-bottom: 1rem;
 }
