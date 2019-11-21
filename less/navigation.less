@@ -19,19 +19,18 @@ nav {
 
     .links {
         width: 32.5rem;
-        
-        .flex(space-around, center);
-
         margin-bottom: 1.0rem;
+
+        .flex(space-around, center);
     }
 
     .buttons-container {
         .flex(end, center);
-    }
-
-    .btn {
-        .button();
-        margin: 0 1.0rem 1.0rem;
+    
+        .btn {
+            .button();
+            margin: 0 1.0rem 1.0rem;
+        }
     }
 
     @media @mobile {
@@ -48,7 +47,6 @@ nav {
 }
 
 header {
-    
     display: flex;
 
     @media @mobile {
@@ -88,7 +86,7 @@ header {
         @media @mobile {
             width: 75%;
         }
-
+        
         h2 {
             font-size: 5.4rem;
             line-height: 1.25;
@@ -112,10 +110,15 @@ header {
         }
     }
 
+    // hero-content on team overrides hero-content on home
+    .hero-content.team {
+        text-align: center;
+    }
+
     .logo-container {
         width: 50vw;
         height: 50vh;
-    
+
         .flex(center, center);
 
         .desktop-logo {
@@ -125,7 +128,7 @@ header {
     
         @media @mobile {
             width: 100vw;
-            height: 30vh;
+            height: 25vh;
         }
     }
 }

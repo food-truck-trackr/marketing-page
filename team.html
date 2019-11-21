@@ -13,8 +13,8 @@
     <nav>
       <a href="index.html" class="logo-link"><h1>Food Truck TrackR</h1></a>
       <div class="links">
-        <a href="#">About</a>
-        <a href="#">Our Team</a>
+        <a href="#about">About</a>
+        <a href="team.html">Our Team</a>
       </div><!-- end links -->
       <div class="buttons-container">
         <div class="btn">Log In</div>
@@ -23,48 +23,52 @@
     </nav>
     <header>
       <div class="hero team">
-        <div class="hero-content">
-          <h2>A food truck on<br />
+        <div class="hero-content team">
+          <h2>A food truck on
           every corner</h2>
         </div>
       </div>
       <div class="logo-container">
-        <img src="img/big-logo.png" />
+        <picture>
+          <source media="(max-width: 500px)" srcset="img/big-logo-cropped.png" class="mobile-logo">
+          <source media="(min-width: 501px)" srcset="img/big-logo.png" class="desktop-logo">
+          <img src="img/big-logo.png" class="desktop-logo">
+        </picture>
       </div>
     </header>
     <section class="container meet-the-team">
       <h3>Making food trucks<br />
       fast, easy, and fun</h3>
       <div class="row">
-        <img src="img/avatar.png" class="avatar">
+        <img src="img/nichols.jpg" class="avatar">
         <div class="profile">
           <p><strong>Justin Nichols</strong></p>
           <p>BACKEND DEVELOPER</p>
         </div>
       </div><!-- end row -->
       <div class="row">
-        <img src="img/avatar.png" class="avatar">
+        <img src="img/moumneh.jpg" class="avatar">
         <div class="profile">
           <p><strong>Rasha Moumneh</strong></p>
           <p>WEB REACT II</p>
         </div>
       </div><!-- end row -->
       <div class="row">
-        <img src="img/avatar.png" class="avatar">
+        <img src="img/chambers.jpg" class="avatar">
         <div class="profile">
           <p><strong>Will Chambers</strong></p>
           <p>WEB REACT I</p>
         </div>
       </div><!-- end row -->
       <div class="row">
-        <img src="img/avatar.png" class="avatar">
+        <img src="img/winzenburger.jpg" class="avatar">
         <div class="profile">
           <p><strong>Adam Winzenburger</strong></p>
           <p>WEB REACT I</p>
         </div>
       </div><!-- end row -->
       <div class="row">
-        <img src="img/avatar.png" class="avatar">
+        <img src="img/kharel.jpg" class="avatar">
         <div class="profile">
           <p><strong>Nirajan Kharel</strong></p>
           <p>WEB UI DEVELOPER</p>

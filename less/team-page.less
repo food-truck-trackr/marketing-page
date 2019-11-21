@@ -4,6 +4,10 @@
         text-align: center;
         padding-top: 3.0rem;
         line-height: 1.2;
+
+        @media @mobile {
+            padding-top: 0;
+        }
     }
  
     .row {
@@ -18,7 +22,6 @@
         }
     }
 
-    // NEED TO MAKE AVATAR IMGS RESPONSIVE
     .avatar {
         width: 100px;
         height: 100px;
@@ -52,5 +55,9 @@
     .img-container img {
         max-width: 100%;
         height: auto;
+    }
+
+    @media @mobile {
+        flex-direction: column;
     }
 }
