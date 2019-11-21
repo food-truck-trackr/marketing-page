@@ -217,7 +217,6 @@ a {
   .bottom-section {
     flex-direction: column;
     align-items: center;
-    width: 80%;
   }
 }
 .bottom-section .down {
@@ -243,7 +242,6 @@ a {
 .bottom-section h3 p {
   text-align: justify;
   font-size: 2rem;
-  font-size: 1.5rem;
   font-family: "Nunito Sans", sans-serif;
 }
 #triptych {
@@ -555,6 +553,11 @@ footer a.credits {
   color: #cc3333;
   padding-bottom: 1.5rem;
   text-align: left;
+}
+@media (max-width: 500px) {
+  .upcoming-stuff h3 {
+    text-align: center;
+  }
 }
 @media (max-width: 500px) {
   .upcoming-stuff h3 {
