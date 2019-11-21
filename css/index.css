@@ -172,9 +172,16 @@ h2 {
 h3 {
   font-size: 3.6rem;
 }
+h4 {
+  font-size: 3rem;
+}
 p {
   font-size: 1.8rem;
   line-height: 1.5;
+}
+a {
+  color: inherit;
+  text-decoration: none;
 }
 .container {
   max-width: 950px;
@@ -184,21 +191,20 @@ p {
 }
 @media (max-width: 500px) {
   .container {
-    padding: 0 3rem;
+    padding: 0 15px;
   }
 }
 .container h3 {
   color: #FFAD43;
-}
-.triptych {
-  display: flex;
+  text-align: center;
+  line-height: 1.2;
+  padding-top: 1.5rem;
 }
 .bottom-section {
   max-width: 950px;
   width: 80%;
   margin: 0 auto;
-  height: 50vh;
-  padding: 40px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -208,8 +214,6 @@ p {
   margin: 2%;
 }
 @media (max-width: 500px) {
-}
-@media (max-width: 500px) {
   .bottom-section {
     flex-direction: column;
     align-items: center;
@@ -217,11 +221,15 @@ p {
 }
 .bottom-section .down {
   align-self: center;
+  width: 50%;
 }
 @media (max-width: 500px) {
+  .bottom-section .down {
+    margin: 30px;
+    width: 80%;
+  }
 }
 .bottom-section h3 {
-  font-family: "Fjalla One", sans-serif;
   letter-spacing: 3px;
   padding: 4% 0;
   color: #89471A;
@@ -259,32 +267,37 @@ p {
     align-items: center;
   }
 }
-#triptych div h3 {
-  font-family: "Fjalla One", sans-serif;
+#triptych div h4 {
   letter-spacing: 3px;
   padding: 4% 0;
   color: #89471A;
 }
 @media (max-width: 500px) {
-  #triptych div h3 {
+  #triptych div h4 {
     font-size: 2rem;
   }
 }
 #triptych div p {
   text-align: justify;
   font-size: 2rem;
-  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
 }
 nav {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 nav h1 {
   font-family: 'Forque', 'Anton', Arial, Helvetica, sans-serif;
   letter-spacing: 0.2rem;
-  padding: 1rem;
   text-transform: uppercase;
+  padding: 1rem;
 }
 @media (max-width: 500px) {
   nav h1 {
@@ -322,11 +335,8 @@ nav .buttons-container .btn {
   align-items: center;
   margin: 0 1rem 1rem;
 }
-@media (max-width: 500px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
+nav .buttons-container a {
+  text-decoration: none;
 }
 .links a {
   font-size: 2rem;
@@ -358,7 +368,7 @@ header .hero {
   }
 }
 header .hero.team {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/chips.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/chips.jpg");
   background-position: center;
 }
 header .hero-content {
@@ -383,7 +393,7 @@ header .hero-content h2 {
 }
 @media (max-width: 500px) {
   header .hero-content h2 {
-    font-size: 3rem;
+    font-size: 3.4rem;
   }
 }
 header .hero-content .btn {
@@ -416,15 +426,15 @@ header .logo-container {
   justify-content: center;
   align-items: center;
 }
-header .logo-container .desktop-logo {
-  max-width: 100%;
-  max-height: 50vh;
-}
 @media (max-width: 500px) {
   header .logo-container {
     width: 100vw;
     height: 25vh;
   }
+}
+header .logo-container .logo-desktop {
+  max-width: 100%;
+  max-height: 50vh;
 }
 footer {
   color: #D6D6D5;
@@ -490,6 +500,9 @@ footer a.credits {
     margin-bottom: 1rem;
   }
 }
+.how-it-works h3 {
+  color: #cc3333;
+}
 .meet-the-team h3 {
   color: #cc3333;
   text-align: center;
@@ -527,9 +540,24 @@ footer a.credits {
   justify-content: space-between;
   align-items: center;
 }
+.upcoming-stuff .content {
+  width: 50%;
+  padding: 2.5rem;
+}
+@media (max-width: 500px) {
+  .upcoming-stuff .content {
+    width: 100%;
+  }
+}
 .upcoming-stuff h3 {
   color: #cc3333;
   padding-bottom: 1.5rem;
+  text-align: left;
+}
+@media (max-width: 500px) {
+  .upcoming-stuff h3 {
+    text-align: center;
+  }
 }
 @media (max-width: 500px) {
   .upcoming-stuff h3 {

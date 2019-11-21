@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <script src="https://use.fontawesome.com/249527188b.js"></script>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -19,8 +18,8 @@
       </div>
       <!-- end links -->
       <div class="buttons-container">
-        <div class="btn">Log In</div>
-        <div class="btn">Sign Up</div>
+        <a href="https://front-end-nix9mjffy.now.sh/Login"><div class="btn">Log In</div></a>
+        <a href="https://front-end-nix9mjffy.now.sh/Register"><div class="btn">Sign Up</div></a>
       </div>
       <!-- end buttons container -->
     </nav>
@@ -30,75 +29,74 @@
           <h2>
             Dude, where's my food truck?
           </h2>
-          <div class="btn">Find Out Now</div>
-        </div>
-      </div>
+          <a href="https://front-end-nix9mjffy.now.sh/Register"><div class="btn">Find Out Now</div></a>
+        </div><!-- end hero-content -->
+      </div><!-- end hero -->
       <div class="logo-container">
         <picture>
-          <source media="(max-width: 500px)" srcset="img/big-logo-cropped.png" class="mobile-logo">
-          <source media="(min-width: 501px)" srcset="img/big-logo.png" class="desktop-logo">
-          <img src="img/big-logo.png" class="desktop-logo">
+          <source media="(max-width: 500px)" srcset="img/big-logo-cropped.png">
+          <source media="(min-width: 501px)" srcset="img/big-logo.png" class="logo-desktop">
+          <img src="img/big-logo.png" class="logo-desktop">
         </picture>
-      </div>
+      </div><!-- end logo-container -->
     </header>
-    <section class="container how-it-works" id="about">
-      <h3>
-        The question isn't when is lunch...<br />
-        The question is WHERE?
-      </h3>
-    </section>
 
-    <section id="triptych">
-      <div class="step">
-        <h3>Local favorites</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullrutrum
-          condimentum diam sed ultrices.
-        </p>
-      </div>
-      <div class="step">
-        <h3>Local favorites</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullrutrum
-          condimentum diam sed ultrices.
-        </p>
-      </div>
-      <div class="step">
-        <h3>Local favorites</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullrutrum
-          condimentum diam sed ultrices.
-        </p>
-      </div>
-    </section> 
+      <section class="container how-it-works" id="about">
+        <h3>The question isn't when is lunch</h3>
+        <h3>The question is WHERE?</h3>
+      </section>
+
+      <section id="triptych">
+        <div class="step">
+          <h4>Satisfy your craving</h4>
+          <p>
+            Find a food truck near you or try something new. Search by rating and cuisine type, and scope out foodie photos and menu prices. 
+          </p>
+        </div>
+        <div class="step">
+          <h4>Stay in the loop</h4>
+          <p>
+            See real-time GPS tracking of your food truck, when it's arriving or leaving, and where it will be next. Never show up to an empty block with an empty stomach again.  
+          </p>
+        </div>
+        <div class="step">
+            <h4>Eat delicious food</h4>
+            <p>
+              Savor your snack, rate food trucks and menu items, and save a food truck to your favorites for next time. 
+            </p>
+        </div>
+      </section> 
+
 
     <section class="bottom-section">
       <div class="down">
         <h3>Local favorites</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rutrum
-          condimentum diam sed ultrices.
+          Every true "foodie” worth their salt knows that some of the best food in any city can be found on food trucks - but knowing when and where those trucks will be can be next to impossible, and discovering new ones often relies on word-of-mouth, which is long on delish tales but short on actual details. Try our easy-to-use FoodTruck TrackR app today, and enjoy the best food YOUR city has to offer. 
         </p>
       </div> 
-      <img src="img/truck.jpg" /> 
-
+      <div class="truck-container">
+        <img src="img/truck.jpg" />
+      </div>
     </section>
 
     <footer>
-      <div>
-        <nav>
-          <a href="http://facebook.com" target="_blank"
-            ><i class="fab fa-facebook"></i
-          ></a>
-          <a href="http://instagram.com" target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="http://twitter.com" target="_blank"
-            ><i class="fab fa-twitter"></i
-          ></a>
-        </nav>
-      </div>
-    </footer>
+        <div class="container">
+          <div class="column">
+            <h1>FoodTruck TrackR</h1>
+            <a href="#" class="icon"><i class="fa fa-github"></i></a>
+          </div>
+          <div class="column links">
+            <a href="#">About</a>
+            <a href="#">Our Team</a>
+            <br>
+            <a href="http://www.freepik.com" class="credits">Logo from Freepik</a>
+          </div>
+          <div class="column">
+            <p>&copy; FoodTruck TrackR 2019</p>
+          </div>
+        </div><!-- end container -->
+      </footer>
     
   </body>
 </html>
