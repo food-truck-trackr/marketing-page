@@ -204,8 +204,7 @@ a {
   max-width: 950px;
   width: 80%;
   margin: 0 auto;
-  height: 50vh;
-  padding: 40px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -213,12 +212,6 @@ a {
   max-width: 100%;
   max-height: 100%;
   margin: 2%;
-}
-@media (max-width: 500px) {
-  .bottom-section img {
-    margin: 30px;
-    height: 40%;
-  }
 }
 @media (max-width: 500px) {
   .bottom-section {
@@ -229,16 +222,15 @@ a {
 }
 .bottom-section .down {
   align-self: center;
+  width: 50%;
 }
 @media (max-width: 500px) {
   .bottom-section .down {
-    height: 80px;
     margin: 30px;
     width: 80%;
   }
 }
 .bottom-section h3 {
-  font-family: "Fjalla One", sans-serif;
   letter-spacing: 3px;
   padding: 4% 0;
   color: #89471A;
@@ -550,9 +542,19 @@ footer a.credits {
   justify-content: space-between;
   align-items: center;
 }
+.upcoming-stuff .content {
+  width: 50%;
+  padding: 2.5rem;
+}
+@media (max-width: 500px) {
+  .upcoming-stuff .content {
+    width: 100%;
+  }
+}
 .upcoming-stuff h3 {
   color: #cc3333;
   padding-bottom: 1.5rem;
+  text-align: left;
 }
 @media (max-width: 500px) {
   .upcoming-stuff h3 {

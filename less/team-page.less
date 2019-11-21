@@ -37,10 +37,20 @@
 .upcoming-stuff {
     padding: 5.0rem 5.0rem;
 
+    .content {
+        width: 50%;
+        padding: 2.5rem;
+
+        @media @mobile {
+            width: 100%;
+        }
+    }
+
     h3 {
         color: @wine;
         padding-bottom: 1.5rem;
-        
+        text-align: left;
+
         @media @mobile {
             text-align: center;
         }
