@@ -208,10 +208,16 @@ a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .bottom-section {
+    padding: 0 10px;
+  }
+}
 .bottom-section img {
   max-width: 100%;
   max-height: 100%;
   margin: 2%;
+  border-radius: 5%;
 }
 @media (max-width: 500px) {
   .bottom-section {
@@ -222,11 +228,12 @@ a {
 .bottom-section .down {
   align-self: center;
   width: 50%;
+  margin: 0 15px;
 }
 @media (max-width: 500px) {
   .bottom-section .down {
-    margin: 30px;
-    width: 80%;
+    margin: 15px;
+    width: 100%;
   }
 }
 .bottom-section h3 {
@@ -237,12 +244,13 @@ a {
 @media (max-width: 500px) {
   .bottom-section h3 {
     font-size: 2rem;
+    text-align: center;
   }
 }
-.bottom-section h3 p {
+.bottom-section p {
   text-align: justify;
   font-size: 2rem;
-  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
 }
 #triptych {
   display: flex;
@@ -255,6 +263,7 @@ a {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 0 50px;
   }
 }
 #triptych div {
@@ -553,11 +562,6 @@ footer a.credits {
   color: #cc3333;
   padding-bottom: 1.5rem;
   text-align: left;
-}
-@media (max-width: 500px) {
-  .upcoming-stuff h3 {
-    text-align: center;
-  }
 }
 @media (max-width: 500px) {
   .upcoming-stuff h3 {
