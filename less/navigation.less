@@ -1,10 +1,15 @@
 nav {
     .flex(space-between, baseline);
 
+    @media @mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+
     h1 {
         .logo-font();
-        padding: 1.0rem;
         text-transform: uppercase;
+        padding: 1.0rem;
 
         @media @mobile {
             font-size: 4.0rem;
@@ -31,18 +36,17 @@ nav {
             .button();
             margin: 0 1.0rem 1.0rem;
         }
-    }
 
-    @media @mobile {
-        flex-direction: column;
-        align-items: center;
+        a {
+            text-decoration: none;
+        }
     }
 }
 
 .links a {
     font-size: 2.0rem;
     font-weight: bold;
-    color: @nav-font;
+    color: @nav-link-color;
     text-decoration: none;
 }
 
@@ -67,11 +71,13 @@ header {
             height: 30vh;
             width: 100vw;
         }
+
+        
     }
 
     // hero on team page overrides hero on home page
     .hero.team {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/chips.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/chips.jpg");
         background-position: center;
     }
 
@@ -95,7 +101,7 @@ header {
             text-shadow: 0.2rem 0.2rem 0.4rem @licorice;
 
             @media @mobile {
-                font-size: 3.0rem;
+                font-size: 3.4rem;
             }
         }
 
@@ -119,16 +125,16 @@ header {
         width: 50vw;
         height: 50vh;
 
-        .flex(center, center);
-
-        .desktop-logo {
-            max-width: 100%;
-            max-height: 50vh;
-        }
-    
         @media @mobile {
             width: 100vw;
             height: 25vh;
+        }
+
+        .flex(center, center);
+
+        .logo-desktop {
+            max-width: 100%;
+            max-height: 50vh;
         }
     }
 }
