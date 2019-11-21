@@ -40,6 +40,10 @@
     h3 {
         color: @wine;
         padding-bottom: 1.5rem;
+        
+        @media @mobile {
+            text-align: center;
+        }
     }
 
     p {
@@ -50,6 +54,10 @@
 
     .img-container {
         width: 50%;
+
+        @media @mobile {
+            width: 100%;
+        }
     }
 
     .img-container img {
@@ -59,5 +67,6 @@
 
     @media @mobile {
         flex-direction: column;
+        padding: 2.5rem 5.0rem;
     }
 }

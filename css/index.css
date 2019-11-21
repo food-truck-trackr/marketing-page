@@ -448,6 +448,12 @@ footer .container {
   justify-content: space-between;
   align-items: start;
 }
+@media (max-width: 500px) {
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 footer .column {
   width: 30%;
 }
@@ -455,11 +461,21 @@ footer .column .icon {
   font-size: 3.4rem;
   color: #D6D6D5;
 }
+@media (max-width: 500px) {
+  footer .column {
+    text-align: center;
+  }
+}
 footer h1 {
   font-family: 'Forque', 'Anton', Arial, Helvetica, sans-serif;
   letter-spacing: 0.2rem;
-  font-size: 4rem;
+  font-size: 3rem;
   text-transform: uppercase;
+}
+@media (max-width: 500px) {
+  footer h1 {
+    text-align: center;
+  }
 }
 footer .links a {
   color: #D6D6D5;
@@ -472,6 +488,19 @@ footer .links a {
 footer p {
   font-size: 1.6rem;
   text-align: right;
+}
+@media (max-width: 500px) {
+  footer p {
+    text-align: center;
+  }
+}
+footer a.credits {
+  font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+  footer a.credits {
+    margin-bottom: 1rem;
+  }
 }
 .meet-the-team h3 {
   color: #cc3333;
@@ -514,11 +543,21 @@ footer p {
   color: #cc3333;
   padding-bottom: 1.5rem;
 }
+@media (max-width: 500px) {
+  .upcoming-stuff h3 {
+    text-align: center;
+  }
+}
 .upcoming-stuff p {
   padding-bottom: 1rem;
 }
 .upcoming-stuff .img-container {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .upcoming-stuff .img-container {
+    width: 100%;
+  }
 }
 .upcoming-stuff .img-container img {
   max-width: 100%;
@@ -527,5 +566,6 @@ footer p {
 @media (max-width: 500px) {
   .upcoming-stuff {
     flex-direction: column;
+    padding: 2.5rem 5rem;
   }
 }
