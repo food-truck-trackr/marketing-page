@@ -344,6 +344,11 @@ nav .buttons-container .btn {
   align-items: center;
   margin: 0 1rem 1rem;
 }
+nav .buttons-container .btn:hover {
+  background-color: transparent;
+  color: #EC4E20;
+  border: 0.3rem solid #EC4E20;
+}
 nav .buttons-container a {
   text-decoration: none;
 }
@@ -417,6 +422,12 @@ header .hero-content .btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #EC4E20;
+}
+header .hero-content .btn:hover {
+  background-color: transparent;
+  color: #EC4E20;
+  border: 0.3rem solid #EC4E20;
 }
 @media (max-width: 500px) {
   header .hero-content .btn {
@@ -424,6 +435,11 @@ header .hero-content .btn {
     width: 14rem;
     height: 3.8rem;
   }
+}
+header .hero-content .btn:hover {
+  background-color: #FFAD43;
+  color: white;
+  border-color: #FFAD43;
 }
 header .hero-content.team {
   text-align: center;
